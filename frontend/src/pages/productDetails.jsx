@@ -102,7 +102,7 @@ export default function ProductDetails() {
 						<div className="w-full bsm:w-2/3 md:w-1/3 rounded-lg">
 							{product.images && product.images.length > 0 ? (
 								<img
-									src={`http://localhost:8000${product.images[0]}`}
+									src={`https://follow-along-yi6s.onrender.com${product.images[0]}`}
 									alt={product.name}
 									className="w-full h-full object-contain bsm:object-cover"
 									style={{ maxHeight: "500px" }} // Adjust the max height as needed

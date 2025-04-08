@@ -20,7 +20,7 @@ app.use(cors({
 }));
 
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
-
+ 
 // Serve static files for uploads and products
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/products', express.static(path.join(__dirname, 'products')));

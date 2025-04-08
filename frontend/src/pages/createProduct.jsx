@@ -41,7 +41,7 @@ const CreateProduct = () => {
                     setEmail(p.email);
                     if (p.images && p.images.length > 0) {
                         setPreviewImages(
-                            p.images.map((imgPath) => `http://localhost:8000${imgPath}`)
+                            p.images.map((imgPath) => `https://follow-along-yi6s.onrender.com${imgPath}`)
                         );
                     }
                 })

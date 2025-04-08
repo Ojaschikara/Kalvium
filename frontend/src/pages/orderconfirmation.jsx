@@ -66,7 +66,7 @@ const OrderConfirmation = () => {
                     name: item.productId.name,
                     price: item.productId.price,
                     images: item.productId.images.map(
-                        (imagePath) => `http://localhost:8000${imagePath}`
+                        (imagePath) => `https://follow-along-yi6s.onrender.com${imagePath}`
                     ),
                     quantity: item.quantity,
                 }));
