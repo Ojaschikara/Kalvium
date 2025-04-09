@@ -1,7 +1,13 @@
 const app = require("./app");
 const connectDatabase = require("./db/Database");
 const cors = require('cors');
-app.use(cors({ origin: '*' }));
+const allowedOrigins = [
+  "https://kalvium-follow-along.vercel.app",
+  "http://localhost:5173"
+];
+
+
+app.use(cors({ origin:allowedOrigins  }));
 
 // Handling uncaught Exception when setting up backend server
 process.on("uncaughtException", (err) => {

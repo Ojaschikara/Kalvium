@@ -14,8 +14,14 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Configure CORS to allow requests from React frontend
+const allowedOrigins = [
+  "https://kalvium-follow-along.vercel.app",
+  "http://localhost:5173"
+];
+
+
 app.use(cors({
-  origin: '*', // Update this if your frontend is hosted elsewhere
+  origin: allowedOrigins, // Update this if your frontend is hosted elsewhere
   credentials: true, // Enable if you need to send cookies or authentication headers
 }));
 
